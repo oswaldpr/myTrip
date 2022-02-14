@@ -1,0 +1,131 @@
+$font-size: 16px;
+$line-height: 24px;
+$input-label: 20px;
+
+$primary-color: #292929;
+$secondary-color: #FFF;
+
+#app-content {
+    width: 80%;
+    margin: auto;
+
+    #error-message {
+        color: red;
+    }
+
+    label {
+        color: $primary-color;
+    }
+
+    .btn {
+        border: 1px solid $primary-color;
+        text-transform: uppercase;
+        background-color: $secondary-color;
+        color: $primary-color;
+        width: initial;
+    }
+
+    .sectionWithTitle {
+        border: 1px solid $primary-color;
+        border-radius: 5px;
+        h2 {
+            color: $secondary-color;
+            background-color: $primary-color;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        h3 {
+            color: $primary-color;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        h5.duration {
+            color: $primary-color;
+            text-align: center;
+            line-height: 1.5;
+            margin: 0;
+        }
+        .section-content {
+            padding: 2% 5%;
+        }
+    }
+    .element-wrapper {
+        .label-wrapper {
+            font-size: $input-label;
+        }
+    }
+
+    .element-wrapper-type {
+        display: block;
+        .label-wrapper-type {
+            font-size: $input-label;
+            width: 30%;
+            float: left;
+        }
+        .input-radio-wrapper {
+            width: 70%;
+            float: left;
+        }
+        .input-radio-element {
+            width: 30%;
+            text-align: center;
+            float: left;
+            input {
+                margin-right: 2%;
+            }
+        }
+    }
+
+    #search-trip-form {
+        .single-stopover {
+            position: relative;
+            .remove-stopover {
+                position: absolute;
+                top: 0;
+                right: -20px;
+            }
+        }
+        .search-trip-submit-button-group {
+            button {
+                margin: 0 5%;
+            }
+        }
+    }
+    #preferred-airline-select {
+        width: 50%;
+        margin: auto;
+    }
+    #search-result-list {
+        margin-top: 6%;
+        .label {
+            text-align: left;
+        }
+        #result-departure, #result-return{
+            margin-bottom: 6%;
+        }
+        .search-result-list-content {
+            width: 70%;
+            margin: auto;
+        }
+        .result-single-flight {
+            width: 55%;
+            margin: 2% auto;
+            background-color: lightgray;
+        }
+        .result-flight-step-content {
+            .single-info-title {
+                font-weight: 700;
+            }
+            .single-info-content {
+                padding-left: 10%;
+            }
+        }
+    }
+}
+
