@@ -42,7 +42,11 @@ export function axiosOperation(serviceRoute, serviceData = '') {
         }
     }
 
-    return axios.post(serviceRoute, params)
+    return axios.post(serviceRoute, params, {
+        headers: {
+            'Content-Type': 'application/json',
+        }
+        })
         .then(function (apiOutput) {
             return apiOutput.data;
         }).catch(function (apiError) {
